@@ -1,19 +1,19 @@
-# An Investigation into the Architecture and Integration of Multi-Modal Open-Source Coding Agents
+# 1. Framework Overview
 
-## Executive Summary
+This research topic focuses on analyzing and comparing different agentic frameworks to determine the best fit for our AI coding agent.
 
-This report provides an exhaustive technical investigation into the architecture, frameworks, and integration patterns of modern multi-modal, open-source coding agents. The analysis reveals a significant architectural schism: while a mature ecosystem of general-purpose agentic frameworks exists, the most prominent coding agents are predominantly built on bespoke architectures. This decision is not an oversight but a calculated engineering necessity driven by the unique, high-fidelity demands of the software development domain.
+## Key Areas of Investigation
 
-The investigation identifies three foundational pillars of modern agent design: the **Planner-Executor paradigm**, which separates high-level reasoning from low-level execution; the **Model Context Protocol (MCP)**, which standardizes tool use; and **model abstraction layers** like LiteLLM, which prevent vendor lock-in.
+- **Framework Analysis:** A comparative study of Google ADK and Agno. LangGraph may be investigated in a later phase.
+- **Architectural Patterns:** Evaluating single-agent vs. multi-agent systems.
+- **Integration and Tooling:** Assessing protocols like MCP and IDE integration.
+- **Security and Reliability:** Defining best practices for secure and reliable agent operation.
 
-A deep-dive comparison of three leading Python-based agent frameworks—**Agno**, **LangGraph**, and **Google's Agent Development Kit (ADK)**—reveals their distinct positions on the spectrum of performance, control, and features. Agno excels in performance and resource efficiency, LangGraph in stateful orchestration and reliability, and ADK in enterprise-grade features and deployment within the Google Cloud ecosystem.
+## Research Structure
 
-However, a critical analysis of leading coding agents like **Aider**, **OpenHands**, and **Cline/Roo-Code** shows they have largely eschewed these general-purpose frameworks. The primary reasons include the need for fine-grained execution control, specialized state management for iterative coding, deep integration with the local development environment, and optimized performance for the rapid edit-test-debug cycle.
+This directory is organized into sub-topics, each with its own set of research notes, prompts, and summaries.
 
-The report concludes by synthesizing these findings into a recommended hybrid architecture that leverages **LangGraph** for orchestration, **MCP** for tooling, and **LiteLLM** for model access, establishing a robust, modular, and secure foundation for future agent-driven software development.
-
-## Section 1: The "Build vs. Buy" Dilemma in Agent Frameworks
-
+- **[1a-framework-adoption-coding-agents](1a-framework-adoption-coding-agents):** Analysis of framework adoption in existing coding agents.
 A central finding of this research is that the most prominent and capable AI coding agents, such as Aider and OpenHands, are built on custom, bespoke frameworks rather than adopting mature, general-purpose agentic frameworks. This section explores the technical, philosophical, and historical reasons for this trend.
 
 ### 1.1 Key Reasons for Custom Frameworks
@@ -63,7 +63,27 @@ The rapid proliferation of Large Language Models presents both an opportunity an
 
 ## Section 3: Framework Deep Dive: Agno, LangGraph, and Google ADK
 
-(This section would contain the detailed comparative analysis from the original summary)
+This section provides a detailed analysis of the core architectural principles of three leading agentic frameworks.
+
+### 3.1 Google ADK: The Enterprise-Grade Orchestrator
+
+The Google Agent Development Kit (ADK) is a comprehensive, event-driven framework designed for building sophisticated, production-ready AI agents.
+
+-   **Core Philosophy:** Emphasizes modularity, extensibility, and a clear separation of concerns through its `Runner` (orchestration) and `Flow` (execution logic) architecture.
+-   **State Management:** Implements a robust state model that tracks committed and pending changes, ensuring predictable state management.
+-   **Key Strengths:** Well-suited for enterprise applications requiring structured, observable, and maintainable agentic systems.
+
+[**Read the full Google ADK analysis here &raquo;**](1b-framework-analysis/adk.md)
+
+### 3.2 Agno: The High-Performance Library
+
+Agno is a lightweight, library-based framework that prioritizes developer control, flexibility, and high-performance execution.
+
+-   **Core Philosophy:** Provides a collection of configurable components (`Agent` and `Team` dataclasses) that can be assembled to create highly customized multi-agent systems.
+-   **State Management:** Features a pluggable `Storage` system, allowing developers to choose the right backend for their needs.
+-   **Key Strengths:** Ideal for performance-sensitive applications and developers who require fine-grained control over the agent's lifecycle.
+
+[**Read the full Agno analysis here &raquo;**](1b-framework-analysis/agno.md)
 
 ## Section 4: A Review of Leading Open-Source Coding Agents
 

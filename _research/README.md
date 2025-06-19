@@ -91,3 +91,40 @@ Our investigation will be centered around the following key areas:
 - A detailed report summarizing the findings of the framework and architectural analysis.
 - A recommended hybrid architecture that specifies the optimal combination of framework(s), patterns, and integration protocols.
 - Functional blueprints for building MCP servers for GitHub and pytest.
+
+---
+
+# Research TODO
+
+This file tracks the research tasks required to determine the optimal architecture for the AI coding agent.
+
+## Phase 1: Foundational Research
+
+### 1.1 Framework Analysis
+- [ ] **Comparative Study:** Conduct a deep-dive comparison of **Google ADK**, **Agno**, and **LangGraph**.
+  - [x] **Performance:** Benchmark instantiation speed, memory footprint, and overall latency.
+  - [ ] **Architecture:** Analyze the core design philosophies (e.g., minimalist vs. stateful graph vs. enterprise system).
+  - [ ] **Capabilities:** Evaluate native support for multi-modality, multi-agent patterns, and persistence.
+
+### 1.2 Architectural Patterns
+- [ ] **Single-Agent vs. Multi-Agent:** Critically evaluate the two dominant architectural philosophies.
+  - [ ] **Cognition.ai's Argument:** Investigate the "shared context" principle and the potential pitfalls of multi-agent systems.
+  - [ ] **Anthropic's Approach:** Analyze the benefits of the "Planner-Executor" and "Supervisor" models.
+  - [ ] **Hybrid Models:** Explore architectures that combine the strengths of both approaches.
+
+### 1.3 Integration and Tooling
+- [ ] **Model Context Protocol (MCP):** Assess MCP as a standard for decoupling agents from their tools.
+  - [ ] Design and blueprint custom MCP servers for **GitHub**.
+  - [ ] Design and blueprint custom MCP servers for **pytest**.
+- [ ] **IDE & Git Integration:** Analyze how existing agents (OpenHands, Cline/Roo-Code, Aider) integrate with the developer's local environment.
+
+### 1.4 Security and Reliability
+- [ ] **Human-in-the-Loop (HITL):** Define non-negotiable checkpoints for human approval.
+- [ ] **Sandboxing:** Establish best practices for executing code and running tests in isolated environments.
+- [ ] **Observability:** Evaluate tools and techniques for tracing and debugging agent behavior.
+
+## Phase 2: Synthesis and Recommendation
+
+- [ ] **Synthesize Findings:** Consolidate all research from Phase 1 into a detailed report.
+- [ ] **Propose Architecture:** Draft a recommended hybrid architecture document.
+- [ ] **Review and Refine:** Review the proposed architecture with the team and refine based on feedback.
