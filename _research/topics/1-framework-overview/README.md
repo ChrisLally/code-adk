@@ -2,13 +2,6 @@
 
 This research topic focuses on analyzing and comparing different agentic frameworks to determine the best fit for our AI coding agent.
 
-## Key Areas of Investigation
-
-- **Framework Analysis:** A comparative study of Google ADK and Agno. LangGraph may be investigated in a later phase.
-- **Architectural Patterns:** Evaluating single-agent vs. multi-agent systems.
-- **Integration and Tooling:** Assessing protocols like MCP and IDE integration.
-- **Security and Reliability:** Defining best practices for secure and reliable agent operation.
-
 ## Research Structure
 
 This directory is organized into sub-topics, each with its own set of research notes, prompts, and summaries.
@@ -85,14 +78,3 @@ Agno is a lightweight, library-based framework that prioritizes developer contro
 
 [**Read the full Agno analysis here &raquo;**](1b-framework-analysis/agno.md)
 
-## Section 4: A Review of Leading Open-Source Coding Agents
-
-(This section would contain the review of Aider, OpenHands, and Cline/Roo-Code from the original summary)
-
-## Section 5: Blueprints for Core Integrations via MCP
-
-(This section would contain the blueprints for GitHub and pytest MCP servers from the original summary)
-
-## Section 6: Synthesis and Future-Facing Recommendations
-
-(This section would contain the final recommendations from the original summary)

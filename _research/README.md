@@ -55,7 +55,7 @@ Our investigation will be centered around the following key areas:
 
 ### 2.1. Framework Analysis
 
-- **Comparative Study:** Conduct a deep-dive comparison of **Google ADK**, **Agno**, and **LangGraph**.
+- **Comparative Study:** Conduct a deep-dive comparison of **Google ADK** and **Agno**. LangGraph may be investigated in a later phase.
   - **Performance:** Benchmark instantiation speed, memory footprint, and overall latency.
   - **Architecture:** Analyze the core design philosophies (e.g., minimalist vs. stateful graph vs. enterprise system).
   - **Capabilities:** Evaluate native support for multi-modality, multi-agent patterns, and persistence.
@@ -70,7 +70,7 @@ Our investigation will be centered around the following key areas:
 ### 2.3. Integration and Tooling
 
 - **Model Context Protocol (MCP):** Assess MCP as a standard for decoupling agents from their tools.
-  - Design and blueprint custom MCP servers for essential developer tools, specifically **GitHub** and **pytest**.
+  - Integrate with existing MCP servers for essential developer tools, such as **GitHub** and **pytest**.
 - **IDE & Git Integration:** Analyze how existing agents (OpenHands, Cline/Roo-Code, Aider) integrate with the developer's local environment, including Git workflows and IDE feedback loops.
 
 ### 2.4. Security and Reliability
@@ -90,7 +90,21 @@ Our investigation will be centered around the following key areas:
 
 - A detailed report summarizing the findings of the framework and architectural analysis.
 - A recommended hybrid architecture that specifies the optimal combination of framework(s), patterns, and integration protocols.
-- Functional blueprints for building MCP servers for GitHub and pytest.
+- A strategy for integrating with existing MCP servers for GitHub and pytest.
+
+---
+
+## 5. A Review of Leading Open-Source Coding Agents
+
+(This section will contain the review of Aider, OpenHands, and Cline/Roo-Code from the original summary)
+
+## 6. Blueprints for Core Integrations via MCP
+
+(This section will contain the blueprints for GitHub and pytest MCP servers from the original summary)
+
+## 7. Synthesis and Future-Facing Recommendations
+
+(This section will contain the final recommendations from the original summary)
 
 ---
 
@@ -101,22 +115,22 @@ This file tracks the research tasks required to determine the optimal architectu
 ## Phase 1: Foundational Research
 
 ### 1.1 Framework Analysis
-- [ ] **Comparative Study:** Conduct a deep-dive comparison of **Google ADK**, **Agno**, and **LangGraph**.
+- [x] **Comparative Study:** Conduct a deep-dive comparison of **Google ADK** and **Agno**.
   - [x] **Performance:** Benchmark instantiation speed, memory footprint, and overall latency.
   - [ ] **Architecture:** Analyze the core design philosophies (e.g., minimalist vs. stateful graph vs. enterprise system).
   - [ ] **Capabilities:** Evaluate native support for multi-modality, multi-agent patterns, and persistence.
 
 ### 1.2 Architectural Patterns
 - [ ] **Single-Agent vs. Multi-Agent:** Critically evaluate the two dominant architectural philosophies.
-  - [ ] **Cognition.ai's Argument:** Investigate the "shared context" principle and the potential pitfalls of multi-agent systems.
-  - [ ] **Anthropic's Approach:** Analyze the benefits of the "Planner-Executor" and "Supervisor" models.
+  - [x] **Cognition.ai's Argument:** Investigate the "shared context" principle and the potential pitfalls of multi-agent systems.
+  - [x] **Anthropic's Approach:** Analyze the benefits of the "Planner-Executor" and "Supervisor" models.
   - [ ] **Hybrid Models:** Explore architectures that combine the strengths of both approaches.
 
 ### 1.3 Integration and Tooling
 - [ ] **Model Context Protocol (MCP):** Assess MCP as a standard for decoupling agents from their tools.
-  - [ ] Design and blueprint custom MCP servers for **GitHub**.
-  - [ ] Design and blueprint custom MCP servers for **pytest**.
-- [ ] **IDE & Git Integration:** Analyze how existing agents (OpenHands, Cline/Roo-Code, Aider) integrate with the developer's local environment.
+  - [ ] Investigate and select existing MCP servers for **GitHub**.
+  - [ ] Investigate and select existing MCP servers for **pytest**.
+- [x] **IDE & Git Integration:** Analyze how existing agents (OpenHands, Cline/Roo-Code, Aider) integrate with the developer's local environment.
 
 ### 1.4 Security and Reliability
 - [ ] **Human-in-the-Loop (HITL):** Define non-negotiable checkpoints for human approval.
