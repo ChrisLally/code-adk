@@ -34,3 +34,32 @@ The `TODO.md` file is organized as follows:
 ```
 
 This structure helps us stay organized and focused on delivering value incrementally.
+
+---
+
+# Goal: Determine the Optimal Architecture for an AI Coding Agent
+
+## Phase 1: Define Goals and Research (Completed)
+
+- [x] Define research goals in `_research/README.md`
+- [x] Define project goals
+- [x] Synthesize research findings from existing documents.
+
+### Questions
+- [x] What are the primary research and project goals? (Answered in `_research/README.md`)
+
+## Phase 2: Coding Agent Analysis
+
+- [x] Analyze the architecture of Aider to determine if it is single-agent or multi-agent.
+- [x] Analyze the architecture of Cline/Roo-Code to determine if it is single-agent or multi-agent.
+- [x] Analyze the architecture of OpenHands to determine if it is single-agent or multi-agent.
+- [x] Create the summary document `_research/topics/2-coding-agent-architectures/summary.md` with the findings.
+
+## Phase 3: Framework Adoption Research
+
+- [x] Generate research prompt to investigate framework adoption trends.
+- [ ] Execute external research using the generated prompt.
+- [ ] Create a new summary document `_research/topics/1-framework-overview/summary.md` with the findings.
+
+### Questions
+- (No questions yet)

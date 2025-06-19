@@ -16,7 +16,7 @@ This document summarizes the architectural analysis of three open-source coding 
 **Conclusion:** Cline/Roo-Code is a **single-agent** system.
 
 **Evidence:**
-- **Linear Task Flow:** The architecture diagram (`old_docs/architecture/extension-architecture.mmd`) illustrates a linear process where a central `Task` object manages the interaction with APIs and the MCP Hub.
+- **Linear Task Flow:** The architecture illustrates a linear process where a central `Task` object manages the interaction with APIs and the MCP Hub.
 - **Modal Operation:** The "Plan & Act" feature is a modal shift within a single agent. The agent changes its capabilities (read-only vs. write-enabled) but remains a single entity. It does not delegate the "Act" phase to a separate executor agent.
 - **No Delegation Mechanism:** The architecture does not include any components for orchestrating or communicating between multiple agents.
 
