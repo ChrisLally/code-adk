@@ -1,0 +1,7 @@
+# Conclusion: A Forward-Looking Approach to Framework Adoption
+
+The research clearly indicates that the prevalence of custom-built frameworks among leading AI coding agents like Aider and OpenHands is largely a product of historical context. The development of these pioneering agents began when general-purpose agentic frameworks were either nascent or not yet available. This forced early developers to build their own bespoke solutions from the ground up to meet the unique and demanding requirements of the software development domain.
+
+However, the landscape has since matured considerably. Frameworks like Google ADK, LangGraph, and Agno now offer robust, well-supported, and feature-rich foundations for building complex agentic systems.
+
+Therefore, while acknowledging the historical trend, the strategic decision for this project is to leverage a modern, general-purpose framework. The benefits of accelerated development, built-in state management, and access to a growing ecosystem of tools and integrations now outweigh the advantages of building a custom solution from scratch. By standing on the shoulders of these mature frameworks, we can focus our efforts on the unique logic and capabilities of our coding agent, rather than on re-engineering foundational components.
